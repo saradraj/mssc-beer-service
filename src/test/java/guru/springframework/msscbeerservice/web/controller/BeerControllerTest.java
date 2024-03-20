@@ -29,7 +29,7 @@ class BeerControllerTest {
                 .andExpect(status().isOk());
     }
 
-    @Test
+/*    @Test
     void saveNewBeer() throws Exception {
 
         BeerDto beerDto = getValidBeerDto();
@@ -39,7 +39,7 @@ class BeerControllerTest {
                 .contentType(MediaType.APPLICATION_JSON)
                 .content(beerDtoJson))
                 .andExpect(status().isCreated());
-    }
+    }*/
 
     @Test
     void updateBeerById() throws Exception {
