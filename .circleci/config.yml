@@ -2,9 +2,9 @@
 # Stacks detected: deps:java:.
 version: 2.1
 jobs:
-  test-java:
+  mssc-brewery-service-java:
     docker:
-      - image: cimg/openjdk:17.0
+      - image: cimg/openjdk:21.0.2
     steps:
       - checkout
       - run:
@@ -34,7 +34,7 @@ jobs:
 workflows:
   build-and-test:
     jobs:
-      - test-java
+      - mssc-brewery-service-java
     # - deploy:
     #     requires:
     #       - test-java
